@@ -1,0 +1,23 @@
+.btnAlign {
+    text-align: right;
+}
+
+.icon {
+      float: right;
+    position: relative;
+    top: -30px;
+    right: -30px;
+    font-size: 1.5em!important;
+}
+
+
+.ui.form .field>label {
+  font-weight:'bold' !important;
+   font-size:'1.2em'!important; padding-top:'5%'!important;
+    padding-bottom:'5%'!important;
+    }
+
+
+    .formStyle{
+        margin: '10%'!important;
+    }
