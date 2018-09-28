@@ -12,12 +12,12 @@
 
 
 .ui.form .field>label {
-  font-weight:'bold' !important;
-   font-size:'1.2em'!important; padding-top:'5%'!important;
-    padding-bottom:'5%'!important;
+  font-weight:bold;
+   font-size:1.2em;
+    padding-bottom:5%
     }
 
 
     .formStyle{
-        margin: '10%'!important;
+        margin: 10%
     }

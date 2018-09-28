@@ -1,5 +1,6 @@
 import React from 'react'
 import { maps } from '../services/maps'
+import '../assets/map-content.css'
 //this component renders the map
 export default class MapContent extends React.Component {
     mapContainer;
@@ -66,15 +67,18 @@ export default class MapContent extends React.Component {
         if (directions) {
             this.drawDirections(directions);
         }
+        else {
+            return null;
+        }
     }
 
     componentDidUpdate() { }
 
     render() {
         return (
-            <div className='map-container'>
+            <div className='mapcontainer'>
 
-                <div style={{ width: '80%', height: '70vh', margin: '5%' }} ref={el => (this.mapContainer = el)} />
+                <div className='mapcontainerinner' ref={el => (this.mapContainer = el)} />
             </div>
         );
     }

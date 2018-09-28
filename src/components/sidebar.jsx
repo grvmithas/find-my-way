@@ -85,9 +85,9 @@ export default class Sidebar extends React.Component {
     render() {
         return (
 
-            <Form style={{ margin: '10%' }}>
+            <Form className='formStyle'>
                 <Form.Field>
-                    <label style={{ fontWeight: 'bold', fontSize: '1em' }}>Start Location</label>
+                    <label>Start Location</label>
                     <input name='from' placeholder='Start Location' value={this.state.from} onChange={(e) =>
 
                         this.setInputValue(e)
@@ -100,7 +100,7 @@ export default class Sidebar extends React.Component {
 
                 </Form.Field>
                 <Form.Field>
-                    <label style={{ fontWeight: 'bold', fontSize: '1em' }}>Drop Location</label>
+                    <label >Drop Location</label>
                     <input name='to' placeholder='Drop Location' value={this.state.to} onChange={(e) =>
 
                         this.setInputValue(e)
@@ -109,7 +109,7 @@ export default class Sidebar extends React.Component {
                         this.state.showToCross && <Icon className='icon' name="close"
                             onClick={() => { this.setState({ showToCross: false, to: '' }) }} />}
                 </Form.Field>
-                <div style={{ textAlign: 'center' }}>
+                <div className='btnAlign'>
                     <Button primary onClick={this.handleSubmit} >{this.state.isSubmit ? 'Re-Submit' : 'Submit'}</Button>
                     <Button secondary onClick={this.clearState}>Reset</Button>
                 </div>

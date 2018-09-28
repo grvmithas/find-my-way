@@ -1,19 +1,21 @@
 import React from 'react';
-
+import '../assets/route-details.css'
+import { Message } from 'semantic-ui-react'
 export const RouteDetails = (props) => {
 
     return (
-
-        <div style={{ margin: '10%', paddingTop: '5%' }} >
-            <p>
-                <span style={{ fontSize: '1.5em' }} >Total distance: </span>
-                <span style={{ fontWeight: "bold", fontSize: '1.5em' }}>{props.total_distance}</span>
-            </p>
-            <p>
-                <span style={{ fontSize: '1.5em' }}>Total Time: </span>
-                <span style={{ fontWeight: "bold", fontSize: '1.5em' }}>{props.total_time}</span>
-            </p>
-        </div>
+        <Message info style={{marginLeft:'5%'}}>
+            <div className='div-route-details' >
+                <p>
+                    <span className='span-label'>Total distance: </span>
+                    <span className='span-value'>{props.total_distance}</span>
+                </p>
+                <p>
+                    <span className='span-label'>Total Time: </span>
+                    <span className='span-value'>{props.total_time}</span>
+                </p>
+            </div>
+        </Message>
     )
 }
 

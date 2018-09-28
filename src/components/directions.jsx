@@ -4,6 +4,7 @@ import { RouteDetails } from './route-details'
 import { fetchDirections } from '../helpers/map-helper';
 import { Loader } from '../loader/loader';
 import { Grid, Label } from 'semantic-ui-react';
+import '../assets/directions.css'
 
 //this is a wrapper component which calls route-details , sidebar and map
 class Directions extends Component {
@@ -56,7 +57,7 @@ class Directions extends Component {
         }));
     };
 
-    
+
     showErrorMessage = message => {
         this.toggleLoader(false);
         this.setState(() => ({
@@ -84,8 +85,7 @@ class Directions extends Component {
                         )}
                         {
                             this.state.errorMessage.length > 0 ?
-                                (<Label style={{ marginLeft: '10%', fontSize: '1em' }}
-                                    color='red'>{this.state.errorMessage}</Label>) : '' //show error message when error occurs
+                                (<Label className='errorLabel' color='red'>{this.state.errorMessage}</Label>) : '' //show error message when error occurs
                         }
                     </Grid.Column>
 

@@ -1,13 +1,13 @@
 
-.map-container
+.mapcontainer
 {
-  width:'80%'!important;
-   height:'70vh'!important;
-   margin:'5%' !important;
+  width:80%;
+   height:70vh;
+   margin:5%
 }
-.map-container-inner
+.mapcontainerinner
 {
-  width:'80%' !important;
-   height:'70vh' !important;
+  width:80%;
+   height:70vh;
   
 }
